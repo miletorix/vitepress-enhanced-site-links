@@ -1,0 +1,42 @@
+{
+  "name": "vitepress-enhanced-links",
+  "version": "0.1.0",
+  "description": "Vue components for enhanced link cards and link blocks for VitePress and other Vue apps.",
+  "main": "dist/vitepress-enhanced-links.umd.js",
+  "module": "dist/vitepress-enhanced-links.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vitepress-enhanced-links.es.js",
+      "require": "./dist/vitepress-enhanced-links.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.17"
+  },
+  "keywords": [
+    "vitepress",
+    "vue",
+    "link",
+    "card",
+    "components",
+    "ui",
+    "enhanced links"
+  ],
+  "author": "Aleksandrs Stahovskis",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4",
+    "vue-tsc": "^3.0.1"
+  }
+}
