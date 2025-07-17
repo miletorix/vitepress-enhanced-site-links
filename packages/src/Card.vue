@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const props = withDefaults(defineProps<{
@@ -21,9 +20,7 @@ const isExternal = computed(() =>
   /^https?:\/\//.test(props.link)
 )
 
-const cardLink = computed(() =>
-  isExternal.value ? props.link : withBase(props.link)
-)
+const cardLink = computed(() => props.link || '#')
 
 const cardLogo = computed(() => {
   if (props.logo)
@@ -73,11 +70,6 @@ const descText = computed(() => props.desc || props.link || '')
   border-color: var(--vp-c-brand-1);
 }
 
-/* .link-card:hover {
-  background-color: var(--vp-c-brand-soft); 
-  border-color: var(--vp-c-brand-1);
-} */
-
 .link-card-content {
   display: flex;
   align-items: center;
@@ -114,7 +106,6 @@ const descText = computed(() => props.desc || props.link || '')
   text-overflow: ellipsis;
 }
 
-/* Mobile adjustments */
 @media (max-width: 600px) {
   .link-card-title {
     font-size: 0.95em;

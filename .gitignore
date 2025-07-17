@@ -1,8 +1,15 @@
+# VuePress build output
+docs/.vitepress/dist/
+docs/.vitepress/.cache/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+
 # Node modules
 node_modules/
 
 # Build output
 dist/
+packages/dist/
 
 # Logs
 npm-debug.log*
@@ -20,6 +27,7 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 *.log
+*.tgz
 
 # macOS / Windows
 ehthumbs.db

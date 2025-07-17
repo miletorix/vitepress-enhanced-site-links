@@ -9,6 +9,7 @@ export default defineConfig({
       name: 'EnhancedSiteLinks',
       fileName: (format) => `enhanced-site-links.${format}.js`
     },
+    cssCodeSplit: true,
     rollupOptions: {
       external: ['vue', 'vitepress'],
       output: {
