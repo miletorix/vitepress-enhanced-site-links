@@ -10,10 +10,11 @@ export default defineConfig({
       fileName: (format) => `enhanced-site-links.${format}.js`
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', 'vitepress'],
       output: {
         globals: {
-          vue: 'Vue'
+          vue: 'Vue',
+          vitepress: 'vitepress'
         }
       }
     }
