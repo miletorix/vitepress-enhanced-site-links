@@ -4,6 +4,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "enhanced-site-links",
+  base: '/vitepress-enhanced-site-links/',
   description: " Vue components for enhanced link cards and link blocks for VitePress. ",
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
