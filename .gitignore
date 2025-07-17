@@ -1,5 +1,5 @@
 # VuePress build output
-docs/.vitepress/dist/
+# docs/.vitepress/dist/
 docs/.vitepress/.cache/
 docs/.vitepress/cache/
 docs/.vitepress/.temp/
@@ -8,7 +8,7 @@ docs/.vitepress/.temp/
 node_modules/
 
 # Build output
-dist/
+# dist/
 packages/dist/
 
 # Logs
