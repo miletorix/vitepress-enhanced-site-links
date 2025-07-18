@@ -81,7 +81,7 @@ export default {
 
 **Output**
 
-![demo-2](./assets/demo-2.png)
+![demo-3](./assets/demo-3.png)
 
 ### Example 3
 
@@ -98,7 +98,7 @@ export default {
 
 **Output**
 
-![demo-3](./assets/demo-3.png)
+![demo-4](./assets/demo-4.png)
 
 ### Example 4
 
@@ -119,4 +119,4 @@ export default {
 
 **Output**
 
-![demo-4](./assets/demo-4.png) 
+![demo-5](./assets/demo-5.png) 
