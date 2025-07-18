@@ -12,7 +12,7 @@ sidebar: false
 Vue components for enhanced link cards in VitePress.
 
 <p align="center">
-  <img src="./demo.png" alt="vitepress-enhanced-site-links demo" width="800">
+  <img src="/demo.png" alt="vitepress-enhanced-site-links demo" width="800">
 </p>
 
 ## Installation
