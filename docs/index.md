@@ -11,6 +11,10 @@ sidebar: false
 
 Vue components for enhanced link cards in VitePress.
 
+<p align="center">
+  <img src="./demo.png" alt="vitepress-enhanced-site-links demo" width="800">
+</p>
+
 ## Installation
 
 ```sh [npm]
@@ -38,14 +42,15 @@ export default {
 ```
 
 ### Single Link Card
-```vue
+```vue [example.md]
 <Card
   title="title..."
   link="https://url.../" 
-  desc="description..."
-  logo="path to img"
+  desc="desc..."
+  logo="path-to-img"
 />
 ```
+
 ::: tip
 If description is empty, the URL will be shown
 :::
@@ -58,11 +63,12 @@ When interacting with some sites, it is necessary to specify the logo (favicon) 
 :::
 
 ### Multiple Link Cards
-```vue
+
+```vue [example.md]
 <CardsGroup :cards="[
-  { title: 'Notepad++', link: 'https://notepad-plus-plus.org/', desc: 'Homepage' },
-  { title: 'VS Code', link: 'https://code.visualstudio.com/', desc: 'Homepage' },
-  { title: 'Sublime Text', link: 'https://www.sublimetext.com/' }
+  { title: 'title...', link: 'https://url.../', desc: 'desc...' },
+  { title: 'title...', link: 'https://url.../', desc: 'desc...' },
+  { title: 'title...', link: 'https://url.../', desc: 'desc...', logo: 'path-to-url' }
 ]" />
 ```
 
@@ -71,27 +77,29 @@ When interacting with some sites, it is necessary to specify the logo (favicon) 
 ### Example 1
 
 **Input**
-```vue
-<Card title="Github" link="https://github.com/" desc="" />
+```vue [example.md]
+<Card title="Github" link="https://github.com/" />
 ```
 
 **Output**
-<Card title="Github" link="https://github.com/" desc="" />
+
+<Card title="Github" link="https://github.com/" />
 
 ### Example 2
 
 **Input**
-```vue
+```vue [example.md]
 <Card title="Github" link="https://github.com/" desc="Github Homepage" />
 ```
 
 **Output**
+
 <Card title="Github" link="https://github.com/" desc="Github Homepage" />
 
 ### Example 3
 
 **Input**
-```vue
+```vue [example.md]
 <Card
   title="YouTube"
   link="https://youtube.com/" 
@@ -101,6 +109,7 @@ When interacting with some sites, it is necessary to specify the logo (favicon) 
 ```
 
 **Output**
+
 <Card
   title="YouTube"
   link="https://youtube.com/" 
@@ -112,7 +121,7 @@ When interacting with some sites, it is necessary to specify the logo (favicon) 
 
 **Input**
 
-```vue
+```vue [example.md]
 <CardsGroup :cards="[
   { title: 'YouTube', link: 'https://youtube.com/', desc: '' },
   { title: 'Github', link: 'https://github.com/', desc: 'Github Homepage' },
