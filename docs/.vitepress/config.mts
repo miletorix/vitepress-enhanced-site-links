@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/vitepress-enhanced-site-links/',
   description: " Vue components for enhanced link cards and link blocks for VitePress. ",
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'favicon.png' }],
   ],
   markdown: {
     config(md) {
@@ -20,7 +20,7 @@ export default defineConfig({
     ],
   },
   themeConfig: {
-    logo: '/favicon.png',
+    logo: 'favicon.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

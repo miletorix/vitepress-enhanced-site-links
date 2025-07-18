@@ -1,6 +1,11 @@
 {
   "name": "@miletorix/vitepress-enhanced-site-links",
   "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miletorix/vitepress-enhanced-site-links"
+  },
+  "homepage": "https://miletorix.github.io/vitepress-enhanced-site-links/",
   "description": "Vue components for enhanced link cards and link groups for VitePress.",
   "main": "./dist/enhanced-site-links.umd.js",
   "module": "./dist/enhanced-site-links.es.js",

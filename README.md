@@ -2,8 +2,14 @@
 
 Vue components for enhanced link cards in VitePress.
 
+<p align="center">
+  <img src="./assets/demo.png" alt="vitepress-enhanced-site-links demo" width="800">
+</p>
 
-[GitHub Page](https://github.com/miletorix/vitepress-enhanced-site-links).
+## Live Demo
+
+See it in action:  
+👉 [https://miletorix.github.io/vitepress-enhanced-site-links/](https://miletorix.github.io/vitepress-enhanced-site-links/)
 
 ## Installation
 
@@ -16,6 +22,7 @@ npm i @miletorix/vitepress-enhanced-site-links
 ### Configuration
 
 ```typescript
+// docs/.vitepress/theme/index.ts
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
@@ -31,7 +38,7 @@ export default {
 }
 ```
 
-### Single link card
+### Single Link Card
 ```vue
 <Card
   title="Github"

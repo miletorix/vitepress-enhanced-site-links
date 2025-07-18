@@ -11,6 +11,16 @@ sidebar: false
 
 Vue components for enhanced link cards in VitePress.
 
+[Github](https://github.com)  
+[YouTube](https://youtube.com)  
+[NPM](https://www.npmjs.com/)
+
+<Card title="Github" link="https://github.com/" desc="" />
+
+<Card title="YouTube" link="https://youtube.com" desc="YouTube Homepage" />
+
+<Card title="NPM" link="https://www.npmjs.com/" desc="NPM Homepage" />
+
 ## Installation
 
 ```sh [npm]
@@ -98,7 +108,7 @@ If description is empty, the URL will be shown
   title="YouTube"
   link="https://youtube.com/" 
   desc="YouTube Homepage"
-  logo="/img/youtube-logo-1.png"
+  logo="youtube-logo-1.png"
 />
 
 ### Example 4
@@ -127,6 +137,6 @@ If description is empty, the URL will be shown
     title: 'Notepad', 
     link: 'https://apps.microsoft.com/detail/9msmlrh6lzf3?hl=en-US&gl=US', 
     desc: 'MS Store',
-    logo: '/img/notepad-logo.png' 
+    logo: 'notepad-logo.png' 
     }
 ]" /> 
