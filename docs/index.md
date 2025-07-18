@@ -11,6 +11,8 @@ sidebar: false
 
 Vue components for enhanced link cards in VitePress.
 
+![npm](https://img.shields.io/npm/v/@miletorix/vitepress-enhanced-site-links) ![npm](https://img.shields.io/npm/dw/@miletorix/vitepress-enhanced-site-links) ![license](https://img.shields.io/npm/l/@miletorix/vitepress-enhanced-site-links)
+
 <p align="center">
   <img src="/demo.png" alt="vitepress-enhanced-site-links demo" width="800">
 </p>
