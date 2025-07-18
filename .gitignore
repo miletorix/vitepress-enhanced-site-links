@@ -1,8 +1,8 @@
 # VuePress build output
-docs/.vitepress/dist/
 docs/.vitepress/.cache/
 docs/.vitepress/cache/
 docs/.vitepress/.temp/
+docs/.vitepress/dist/
 
 # Node modules
 node_modules/

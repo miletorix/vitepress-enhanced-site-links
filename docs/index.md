@@ -11,16 +11,6 @@ sidebar: false
 
 Vue components for enhanced link cards in VitePress.
 
-[Github](https://github.com)  
-[YouTube](https://youtube.com)  
-[NPM](https://www.npmjs.com/)
-
-<Card title="Github" link="https://github.com/" desc="" />
-
-<Card title="YouTube" link="https://youtube.com" desc="YouTube Homepage" />
-
-<Card title="NPM" link="https://www.npmjs.com/" desc="NPM Homepage" />
-
 ## Installation
 
 ```sh [npm]
@@ -50,14 +40,21 @@ export default {
 ### Single Link Card
 ```vue
 <Card
-  title="Github"
-  link="https://github.com/" 
-  desc="Github Homepage"
-  logo="/img/logo-github.png"
+  title="title..."
+  link="https://url.../" 
+  desc="description..."
+  logo="path to img"
 />
 ```
 ::: tip
 If description is empty, the URL will be shown
+:::
+
+::: warning 🚧 Attention
+When interacting with some sites, it is necessary to specify the logo (favicon) icon **manually**, because there is a problem with loading.
+
+**Cases have been observed**:
+- Sharing links with **OneDrive**
 :::
 
 ### Multiple Link Cards
@@ -99,7 +96,7 @@ If description is empty, the URL will be shown
   title="YouTube"
   link="https://youtube.com/" 
   desc="YouTube Homepage"
-  logo="/img/youtube-logo-1.png" //custom logo
+  logo="/img/youtube-logo-1.png"
 />
 ```
 
@@ -124,7 +121,7 @@ If description is empty, the URL will be shown
     link: 'https://apps.microsoft.com/detail/9msmlrh6lzf3?hl=en-US&gl=US', 
     desc: 'MS Store',
     logo: '/img/notepad-logo.png' 
-    }
+  }
 ]" />  
 ```
 
