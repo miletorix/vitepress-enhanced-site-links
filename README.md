@@ -8,8 +8,11 @@ Vue components for enhanced link cards in VitePress.
 
 ## Live Demo and more information
 
-See it in action:  
+✨ See it in action:  
 👉 [https://miletorix.github.io/vitepress-enhanced-site-links/](https://miletorix.github.io/vitepress-enhanced-site-links/)
+
+📦 NPM Package:  
+👉 [https://www.npmjs.com/package/@miletorix/vitepress-enhanced-site-links](https://www.npmjs.com/package/@miletorix/vitepress-enhanced-site-links)
 
 ## Installation
 
