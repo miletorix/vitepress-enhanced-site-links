@@ -1,7 +1,6 @@
 ---
 prev: false
 next: false
-title: Home
 layout: doc
 outline: [2, 3]
 sidebar: false
