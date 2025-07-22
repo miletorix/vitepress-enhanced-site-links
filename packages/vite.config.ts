@@ -7,13 +7,15 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       name: 'EnhancedSiteLinks',
-      fileName: (format) => `enhanced-site-links.${format}.js`
+      fileName: (format) => `enhanced-site-links.${format}.js`,
+      formats: ['es', 'umd']
     },
     cssCodeSplit: true,
     rollupOptions: {
       external: ['vue', 'vitepress'],
       output: {
         globals: {
+          exports: 'named',
           vue: 'Vue',
           vitepress: 'vitepress'
         }
