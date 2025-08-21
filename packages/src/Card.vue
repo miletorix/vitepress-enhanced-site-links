@@ -59,6 +59,7 @@ const descText = computed(() => props.desc || props.link || '')
   background-color: var(--vp-c-bg-soft);
   border-radius: 12px;
   padding: 1em;
+  margin-top: 24px;
   margin-bottom: 1em;
   text-decoration: none;
   border: 3px solid transparent;
