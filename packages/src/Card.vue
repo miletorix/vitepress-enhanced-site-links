@@ -63,7 +63,7 @@ const descText = computed(() => props.desc || props.link || '')
   margin-bottom: 1em;
   text-decoration: none;
   border: 3px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: all 0.3s ease;
   color: inherit;
 }
 
