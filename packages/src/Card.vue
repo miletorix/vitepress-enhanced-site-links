@@ -49,6 +49,23 @@ const descText = computed(() => props.desc || props.link || '')
         <div class="link-card-title">{{ title }}</div>
         <div class="link-card-desc">{{ descText }}</div>
       </div>
+        <span class="link-card-arrow" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+          >
+            <path
+              d="M7 17L17 7M17 7H9M17 7V15"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
+        </span>
     </div>
   </a>
 </template>
@@ -69,7 +86,9 @@ const descText = computed(() => props.desc || props.link || '')
 
 .link-card:hover {
   border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
 }
+
 
 .link-card-content {
   display: flex;
@@ -91,13 +110,19 @@ const descText = computed(() => props.desc || props.link || '')
 }
 
 .link-card-title {
-  font-weight: 600;
-  font-size: 1em;
-  margin-bottom: 0.2em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease;
 }
+
+.link-card:hover .link-card-title {
+  background-size: 100% 1.5px;
+}
+
 
 .link-card-desc {
   font-size: 0.9em;
@@ -105,6 +130,24 @@ const descText = computed(() => props.desc || props.link || '')
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.link-card-arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  opacity: 0.35;
+  transform: translateX(0);
+  transition: opacity 0.25s ease, transform 0.25s ease, color 0.25s ease;
+  color: var(--vp-c-text-2);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.link-card:hover .link-card-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+  color: var(--vp-c-brand-1);
 }
 
 @media (max-width: 600px) {

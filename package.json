@@ -10,7 +10,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@miletorix/vitepress-enhanced-site-links": "file:packages/miletorix-vitepress-enhanced-site-links-1.0.3.tgz",
+    "@miletorix/vitepress-enhanced-site-links": "^1.0.6",
     "markdown-it": "^14.1.0",
     "vitepress-plugin-group-icons": "^1.6.1"
   }

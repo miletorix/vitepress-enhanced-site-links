@@ -8,7 +8,7 @@ sidebar: false
 
 # vitepress-enhanced-site-links
 
-Vue components for enhanced link cards in VitePress.
+Vue components for enhanced link cards in VitePress <3.
 
 ![npm](https://img.shields.io/npm/v/@miletorix/vitepress-enhanced-site-links) ![npm](https://img.shields.io/npm/dw/@miletorix/vitepress-enhanced-site-links) ![license](https://img.shields.io/npm/l/@miletorix/vitepress-enhanced-site-links)
 

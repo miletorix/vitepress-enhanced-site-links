@@ -71,6 +71,8 @@ export default {
 
 ![demo-2](https://raw.githubusercontent.com/miletorix/vitepress-enhanced-site-links/main/assets/demo-2.png)
 
+![demo-2](https://raw.githubusercontent.com/miletorix/vitepress-enhanced-site-links/main/assets/demo-2-1.png)
+
 ### Example 2
 
 **Input**
@@ -82,6 +84,8 @@ export default {
 **Output**
 
 ![demo-3](https://raw.githubusercontent.com/miletorix/vitepress-enhanced-site-links/main/assets/demo-3.png)
+
+![demo-3](https://raw.githubusercontent.com/miletorix/vitepress-enhanced-site-links/main/assets/demo-3-1.png)
 
 ### Example 3
 
